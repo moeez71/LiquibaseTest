@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Status') {
       steps {
-        sh 'liquibase status --url="jdbc:mysql://localhost:3306/freebies?characterEncoding=UTF-8&autoReconnect=true&autoReconnectForPools=true" --changeLogFile=my_app-wrapper.xml --username=root --password=root'
+        sh 'liquibase status --url="jdbc:mysql://192.168.7.105:3306/freebies?characterEncoding=UTF-8&autoReconnect=true&autoReconnectForPools=true" --changeLogFile=my_app-wrapper.xml --username=root --password=root'
       }
     }
   }
